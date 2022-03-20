@@ -1,2 +1,2 @@
 # ecom-website
- E-commerce website with sales management
+ E-commerce website with Rental Service

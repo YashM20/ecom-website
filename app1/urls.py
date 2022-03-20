@@ -10,10 +10,25 @@ from .views import *
 #   ]
 
 urlpatterns = [
-    path('', Company_login, name='c_login'),
-    path('registration/', Company_register, name='c_register'),
+    path('signin/', Sign_in, name='signin'),
+    path('signup/', Sign_up, name='signup'),
+    path('', home, name='home'),
+    path('Comp_forgetpass/', Comp_forgetpass, name='Comp_forgetpass'),
+    path('New_pass/',New_pass,name='New_pass'),
     path('Dashboard/',Dashboard,name='Dashboard'),
     path('OTP_check/',OTP_check,name='OTP_check'),
-    path('New_pass/',New_pass,name='New_pass'),
-    path('Comp_forgetpass/', Comp_forgetpass, name='Comp_forgetpass'),
+
+# ============== web page =================
+
+    path('cart/',Cart,name='cart'),
+    path('checkout/',Checkout,name='checkout'),
+    path('contacts/',Contacts,name='contacts'),
+    path('my_account/',My_account,name='my_account'),
+    path('product_details/',Product_details,name='product_details'),
+    path('product_list/',Product_list,name='product_list'),
+    path('wishlist/',Wishlist,name='wishlist'),
+    
+
+    
+    
 ]
