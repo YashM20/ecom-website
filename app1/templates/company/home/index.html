@@ -5,8 +5,8 @@
         <meta charset="utf-8">
         <title>E Store - eCommerce Plateform</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="eCommerce HTML Template Free Download" name="keywords">
-        <meta content="eCommerce HTML Template Free Download" name="description">
+        <meta content="E Store - eCommerce Plateform" name="keywords">
+        <meta content="E Store - eCommerce Plateform" name="description">
 
         <!-- Favicon -->
         <link href="{% static 'company/home/img/favicon.ico' %}" rel="icon">
@@ -25,22 +25,6 @@
     </head>
 
     <body>
-        <!-- Top bar Start -->
-        <div class="top-bar">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <i class="fa fa-envelope"></i>
-                        support@email.com
-                    </div>
-                    <div class="col-sm-6">
-                        <i class="fa fa-phone-alt"></i>
-                        +012-345-6789
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Top bar End -->
         
         <!-- Nav Bar Start -->
         <div class="nav">
@@ -54,17 +38,17 @@
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto">
                             <a href="{% url 'home' %}" class="nav-item nav-link active">Home</a>
-                            <a href="{% static 'company/home/html/product-list.html' %}" class="nav-item nav-link">Products</a>
-                            <a href="{% static 'company/home/html/product-detail.html' %}" class="nav-item nav-link">Product Detail</a>
-                            <a href="{% static 'company/home/html/cart.html" class="nav-item nav-link">Cart</a>
-                            <a href="{% static 'company/home/html/checkout.html' %}" class="nav-item nav-link">Checkout</a>
-                            <a href="{% static 'company/home/html/my-account.html' %}" class="nav-item nav-link">My Account</a>
+                            <a href="{% url 'product_list' %}" class="nav-item nav-link">Products</a>
+                            <a href="{% url 'product_details' %}" class="nav-item nav-link">Product Detail</a>
+                            <a href="{% url 'cart' %}" class="nav-item nav-link">Cart</a>
+                            <a href="{% url 'checkout' %}" class="nav-item nav-link">Checkout</a>
+                            <a href="{% url 'my_account' %}" class="nav-item nav-link">My Account</a>
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">More Pages</a>
                                 <div class="dropdown-menu">
-                                    <a href="{% static 'company/home/html/wishlist.html' %}" class="dropdown-item">Wishlist</a>
+                                    <a href="{% url 'wishlist' %}" class="dropdown-item">Wishlist</a>
                                     <a href="{% url 'signin' %}" class="dropdown-item">Login & Register</a>
-                                    <a href="{% static 'company/home/html/contact.html' %}" class="dropdown-item">Contact Us</a>
+                                    <a href="{% url 'contacts' %}" class="dropdown-item">Contact Us</a>
                                 </div>
                             </div>
                         </div>
@@ -103,11 +87,11 @@
                     </div>
                     <div class="col-md-3">
                         <div class="user">
-                            <a href="{% static 'company/home/html/wishlist.html' %}" class="btn wishlist">
+                            <a href="{% url 'wishlist' %}" class="btn wishlist">
                                 <i class="fa fa-heart"></i>
                                 <span>(0)</span>
                             </a>
-                            <a href="{% static 'company/home/html/cart.html' %}" class="btn cart">
+                            <a href="{% url 'cart' %}" class="btn cart">
                                 <i class="fa fa-shopping-cart"></i>
                                 <span>(0)</span>
                             </a>
@@ -172,7 +156,7 @@
                                 <img src="{% static 'company/home/img/slider-3.jpg' %}" alt="Slider Image" />
                                 <div class="header-slider-caption">
                                     <p>Some text goes here that describes the image</p>
-                                    <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Shop Now</a>
+                                    <a class="btn" href="{% url 'cart' %}"><i class="fa fa-shopping-cart"></i>Shop Now</a>
                                 </div>
                             </div>
                         </div>
@@ -346,7 +330,7 @@
                                 </div>
                             </div>
                             <div class="product-image">
-                                <a href="{% static 'company/home/html/product-detail.html' %}">
+                                <a href="{% url 'product_details' %}">
                                     <img src="{% static 'company/home/img/product-1.jpg' %}" alt="Product Image">
                                 </a>
                                 <div class="product-action">
@@ -374,7 +358,7 @@
                                 </div>
                             </div>
                             <div class="product-image">
-                                <a href="{% static 'company/home/html/product-detail.html' %}">
+                                <a href="{% url 'product_details' %}">
                                     <img src="{% static 'company/home/img/product-2.jpg' %}" alt="Product Image">
                                 </a>
                                 <div class="product-action">
@@ -402,7 +386,7 @@
                                 </div>
                             </div>
                             <div class="product-image">
-                                <a href="{% static 'company/home/html/product-detail.html' %}">
+                                <a href="{% url 'product_details' %}">
                                     <img src="{% static 'company/home/img/product-3.jpg' %}" alt="Product Image">
                                 </a>
                                 <div class="product-action">
@@ -430,7 +414,7 @@
                                 </div>
                             </div>
                             <div class="product-image">
-                                <a href="{% static 'company/home/html/product-detail.html' %}">
+                                <a href="{% url 'product_details' %}">
                                     <img src="{% static 'company/home/img/product-4.jpg' %}" alt="Product Image">
                                 </a>
                                 <div class="product-action">
@@ -458,7 +442,7 @@
                                 </div>
                             </div>
                             <div class="product-image">
-                                <a href="{% static 'company/home/html/product-detail.html' %}">
+                                <a href="{% url 'product_details' %}">
                                     <img src="{% static 'company/home/img/product-5.jpg' %}" alt="Product Image">
                                 </a>
                                 <div class="product-action">
@@ -516,7 +500,7 @@
                                 </div>
                             </div>
                             <div class="product-image">
-                                <a href="{% static 'company/home/html/product-detail.html' %}">
+                                <a href="{% url 'product_details' %}">
                                     <img src="{% static 'company/home/img/product-6.jpg' %}" alt="Product Image">
                                 </a>
                                 <div class="product-action">
@@ -527,7 +511,7 @@
                             </div>
                             <div class="product-price">
                                 <h3><span>$</span>99</h3>
-                                <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                                <a class="btn" href="{% url 'cart' %}"><i class="fa fa-shopping-cart"></i>Buy Now</a>
                             </div>
                         </div>
                     </div>
@@ -544,7 +528,7 @@
                                 </div>
                             </div>
                             <div class="product-image">
-                                <a href="{% static 'company/home/html/product-detail.html' %}">
+                                <a href="{% url 'product_details' %}}">
                                     <img src="{% static 'company/home/img/product-7.jpg' %}" alt="Product Image">
                                 </a>
                                 <div class="product-action">
@@ -555,7 +539,7 @@
                             </div>
                             <div class="product-price">
                                 <h3><span>$</span>99</h3>
-                                <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                                <a class="btn" href="{% url 'cart' %}"><i class="fa fa-shopping-cart"></i>Buy Now</a>
                             </div>
                         </div>
                     </div>
@@ -572,7 +556,7 @@
                                 </div>
                             </div>
                             <div class="product-image">
-                                <a href="{% static 'company/home/html/product-detail.html' %}">
+                                <a href="{% url 'product_details' %}">
                                     <img src="{% static 'company/home/img/product-8.jpg' %}" alt="Product Image">
                                 </a>
                                 <div class="product-action">
@@ -583,7 +567,7 @@
                             </div>
                             <div class="product-price">
                                 <h3><span>$</span>99</h3>
-                                <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                                <a class="btn" href="{% url 'cart' %}"><i class="fa fa-shopping-cart"></i>Buy Now</a>
                             </div>
                         </div>
                     </div>
@@ -600,7 +584,7 @@
                                 </div>
                             </div>
                             <div class="product-image">
-                                <a href="{% static 'company/home/html/product-detail.html' %}">
+                                <a href="{% url 'product_details' %}">
                                     <img src="{% static 'company/home/img/product-9.jpg' %}" alt="Product Image">
                                 </a>
                                 <div class="product-action">
@@ -611,7 +595,7 @@
                             </div>
                             <div class="product-price">
                                 <h3><span>$</span>99</h3>
-                                <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                                <a class="btn" href="{% url 'cart' %}"><i class="fa fa-shopping-cart"></i>Buy Now</a>
                             </div>
                         </div>
                     </div>
@@ -628,7 +612,7 @@
                                 </div>
                             </div>
                             <div class="product-image">
-                                <a href="{% static 'company/home/html/product-detail.html' %}">
+                                <a href="{% url 'product_details' %}">
                                     <img src="{% static 'company/home/img/product-10.jpg' %}" alt="Product Image">
                                 </a>
                                 <div class="product-action">
@@ -639,7 +623,7 @@
                             </div>
                             <div class="product-price">
                                 <h3><span>$</span>99</h3>
-                                <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                                <a class="btn" href="{% url 'cart' %}"><i class="fa fa-shopping-cart"></i>Buy Now</a>
                             </div>
                         </div>
                     </div>
